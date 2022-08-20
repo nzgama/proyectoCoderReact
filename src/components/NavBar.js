@@ -1,7 +1,6 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+import CartWidget from "./CartWidget";
 
-function NavBar() {
+const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
@@ -61,6 +60,9 @@ function NavBar() {
             </li>
           </ul>
           <form className="d-flex" role="search">
+            <CartWidget />
+          </form>
+          <form className="d-flex" role="search">
             <input
               className="form-control me-2"
               type="search"
@@ -75,6 +77,6 @@ function NavBar() {
       </div>
     </nav>
   );
-}
+};
 
 export default NavBar;
