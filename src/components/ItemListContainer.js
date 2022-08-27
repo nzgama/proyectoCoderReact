@@ -1,5 +1,12 @@
+import ItemCount from "./ItemCount";
+
 const ItemListContainer = (props) => {
-  return <span class="badge text-bg-secondary">{props.itemCounter}</span>;
+  return (
+    <>
+      <h1>{props.hola}</h1>
+      <ItemCount stock="20" />
+    </>
+  );
 };
 
 export default ItemListContainer;

@@ -1,10 +1,13 @@
 import "./App.css";
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Bienvenido !!!</h1>
-    </div>
+    <>
+      <NavBar />
+      <ItemListContainer hola="Hello word !!!" />
+    </>
   );
 };
 
