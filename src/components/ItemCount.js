@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ItemCount = (props) => {
-  const [ProductCount, setProductCount] = useState(0);
+  const [ProductCount, setProductCount] = useState(1);
 
   const itemPlus = () => {
     ProductCount < props.stock && setProductCount(ProductCount + 1);
