@@ -13,30 +13,34 @@ const ItemCount = (props) => {
 
   return (
     <>
-      <div
-        className="btn-group"
-        role="group"
-        aria-label="Basic outlined example"
-      >
-        <button
-          type="button"
-          className="btn btn-outline-primary"
-          onClick={itemMinus}
+      <div>
+        <div
+          className="btn-group"
+          role="group"
+          aria-label="Basic outlined example"
         >
-          <i class="bi bi-dash-circle-fill"></i>
-        </button>
-        <input type="number" value={ProductCount} />
-        <button
-          type="button"
-          className="btn btn-outline-primary"
-          onClick={itemPlus}
-        >
-          <i class="bi bi-plus-circle-fill"></i>
-        </button>
+          <button
+            type="button"
+            className="btn btn-outline-dark"
+            onClick={itemMinus}
+          >
+            <i className="bi bi-dash-circle-fill"></i>
+          </button>
+          <div className="container">
+            <h5>{ProductCount}</h5>
+          </div>
+          <button
+            type="button"
+            className="btn btn-outline-dark"
+            onClick={itemPlus}
+          >
+            <i className="bi bi-plus-circle-fill"></i>
+          </button>
+        </div>
       </div>
 
-      <div>
-        <button type="button" class="btn btn-outline-primary">
+      <div className="text-end">
+        <button type="button" className="btn btn-outline-dark">
           Agregar al carrito
         </button>
       </div>

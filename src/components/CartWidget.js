@@ -8,7 +8,7 @@ const CartWidget = () => {
       <div className="p-2 bg-light">
         <button type="button" className="btn btn-outline-dark">
           <i className="bi bi-cart3"></i>
-          <span class="badge text-bg-secondary">{CartCount}</span>{" "}
+          <span className="badge text-bg-secondary">{CartCount}</span>
         </button>
       </div>
     </>
