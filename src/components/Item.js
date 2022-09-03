@@ -7,7 +7,7 @@ const Item = (props) => {
         <h4 className="text-center">{props.title}</h4>
         <img
           src={props.picureURL}
-          class="rounded mx-auto d-block border border-dark"
+          className="rounded mx-auto d-block border border-dark"
           alt="..."
         ></img>
         <div className="card-body">

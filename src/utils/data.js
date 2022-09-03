@@ -6,6 +6,8 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 20,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
     id: 2,
@@ -14,6 +16,8 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 25,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 30,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
     id: 4,
@@ -30,6 +36,8 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 32,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
     id: 5,
@@ -38,6 +46,8 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 16,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
     id: 6,
@@ -46,6 +56,8 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 21,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
     id: 7,
@@ -54,6 +66,8 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 3,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
     id: 8,
@@ -62,6 +76,8 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 40,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
     id: 9,
@@ -70,5 +86,7 @@ export const data = [
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
     stock: 35,
+    descripcion:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
 ];
