@@ -2,6 +2,11 @@ export const data = [
   {
     id: 1,
     title: "Remera blanca",
+    categori_id: 1,
+    category: {
+      name: "Remeras",
+      id: 1,
+    },
     price: 100,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
@@ -12,6 +17,11 @@ export const data = [
   {
     id: 2,
     title: "Remera negra",
+    categori_id: 1,
+    category: {
+      name: "Remeras",
+      id: 1,
+    },
     price: 100,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
@@ -22,6 +32,11 @@ export const data = [
   {
     id: 3,
     title: "Remera gris",
+    categori_id: 1,
+    category: {
+      name: "Remeras",
+      id: 1,
+    },
     price: 100,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
@@ -32,6 +47,11 @@ export const data = [
   {
     id: 4,
     title: "Pantalon blanco",
+    categori_id: 2,
+    category: {
+      name: "Pantalones",
+      id: 2,
+    },
     price: 500,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
@@ -42,6 +62,11 @@ export const data = [
   {
     id: 5,
     title: "Pantalon negro",
+    categori_id: 2,
+    category: {
+      name: "Pantalones",
+      id: 2,
+    },
     price: 500,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
@@ -52,6 +77,11 @@ export const data = [
   {
     id: 6,
     title: "Pantalon gris",
+    categori_id: 2,
+    category: {
+      name: "Pantalones",
+      id: 2,
+    },
     price: 500,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
@@ -62,6 +92,11 @@ export const data = [
   {
     id: 7,
     title: "Campera blanca",
+    categori_id: 3,
+    category: {
+      name: "Camperas",
+      id: 3,
+    },
     price: 1000,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
@@ -72,6 +107,11 @@ export const data = [
   {
     id: 8,
     title: "Campera negra",
+    categori_id: 3,
+    category: {
+      name: "Camperas",
+      id: 3,
+    },
     price: 1000,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
@@ -82,6 +122,11 @@ export const data = [
   {
     id: 9,
     title: "Campera gris",
+    categori_id: 3,
+    category: {
+      name: "Camperas",
+      id: 3,
+    },
     price: 1000,
     picureURL:
       "https://www.phswarnerhoward.co.uk/assets/images/no_img_avaliable.jpg",
