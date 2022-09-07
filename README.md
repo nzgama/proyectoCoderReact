@@ -1,4 +1,4 @@
-# Proyecto para CODERHOUSE "MY TIENDA"
+# Proyecto para CODERHOUSE "MI TIENDA"
 
 ## Realizado en React Js
 
