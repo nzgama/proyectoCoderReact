@@ -41,7 +41,7 @@ const ItemCount = (props) => {
 
       <div className="text-end">
         <button
-          onClick={props.onAdd}
+          onClick={() => props.onAdd(ProductCount)}
           type="button"
           className="btn btn-outline-dark"
         >

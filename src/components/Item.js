@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "./CartContext";
 
 const Item = (props) => {
   const [AddToCart, setAddToCart] = useState(false);
+  const test = useContext(CartContext);
 
-  const onAdd = () => {
+  const onAdd = (qty) => {
     setAddToCart(true);
+    test.addItem(props, qty);
   };
 
   return (
@@ -27,11 +30,7 @@ const Item = (props) => {
               {AddToCart ? (
                 <div className="text-end">
                   <Link to="/cart">
-                    <button
-                      onClick={props.onAdd}
-                      type="button"
-                      className="btn btn-outline-dark"
-                    >
+                    <button type="button" className="btn btn-outline-dark">
                       Ir al carrito
                     </button>
                   </Link>
