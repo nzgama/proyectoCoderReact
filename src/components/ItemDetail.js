@@ -1,9 +1,16 @@
 import ItemCount from "./ItemCount";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ItemDetail = (props) => {
+  const [AddToCart, setAddToCart] = useState(false);
+
+  const onAdd = () => {
+    setAddToCart(true);
+  };
+
   return (
     <>
-      {console.log(props.product)}
       <div className="px-4 py-5 my-5 text-center">
         <h1 className="display-5 fw-bold">{props.product.title}</h1>
         <img
@@ -18,7 +25,30 @@ const ItemDetail = (props) => {
             Stock disponible {props.product.stock}
           </small>
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <ItemCount stock={props.product.stock} />
+            {AddToCart ? (
+              <div className="text-end">
+                <Link to="/cart">
+                  <button
+                    onClick={props.onAdd}
+                    type="button"
+                    className="btn btn-outline-dark"
+                  >
+                    Ir al carrito
+                  </button>
+                </Link>
+                <Link to="/">
+                  <button
+                    onClick={props.onAdd}
+                    type="button"
+                    className="btn btn-outline-dark"
+                  >
+                    Seguir comprando
+                  </button>
+                </Link>
+              </div>
+            ) : (
+              <ItemCount stock={props.product.stock} onAdd={onAdd} />
+            )}
           </div>
         </div>
       </div>

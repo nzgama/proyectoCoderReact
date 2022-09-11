@@ -40,7 +40,11 @@ const ItemCount = (props) => {
       </div>
 
       <div className="text-end">
-        <button type="button" className="btn btn-outline-dark">
+        <button
+          onClick={props.onAdd}
+          type="button"
+          className="btn btn-outline-dark"
+        >
           Agregar al carrito
         </button>
       </div>
