@@ -3,6 +3,7 @@ import { data } from "../utils/data";
 import { useEffect, useState } from "react";
 import GetProduct from "../utils/GetProduct";
 import { useParams } from "react-router-dom";
+import Spinner from "./Spinner";
 
 const ItemDetailConteiner = () => {
   const [product, setProduct] = useState([]);
@@ -16,7 +17,13 @@ const ItemDetailConteiner = () => {
 
   return (
     <>
-      <ItemDetail product={product} />
+      {product.length === 0 ? (
+        <div className="px-4 py-5 my-5 text-center">
+          <Spinner />
+        </div>
+      ) : (
+        <ItemDetail product={product} />
+      )}
     </>
   );
 };

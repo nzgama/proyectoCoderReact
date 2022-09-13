@@ -24,26 +24,27 @@ const Cart = () => {
         </li>
       ))}
       <li>
-        <div className="row">
-          <div className="col"></div>
+        {test.totalCart() > 0 && (
+          <div className="row">
+            <div className="col"></div>
+            <div className="col">
+              <h3>Total: {test.totalCart()} </h3>
+            </div>
 
-          <div className="col">
-            <h3>Total: --- </h3>
+            <div className="col">
+              <button type="button" className="btn btn-primary btn-lg m-2">
+                Finalizar compra
+              </button>
+              <button
+                onClick={test.clear}
+                type="button"
+                className="btn btn-danger btn-lg m-2"
+              >
+                Vaciar carrito
+              </button>
+            </div>
           </div>
-
-          <div className="col">
-            <button type="button" className="btn btn-primary btn-lg m-2">
-              Finalizar compra
-            </button>
-            <button
-              onClick={test.clear}
-              type="button"
-              className="btn btn-danger btn-lg m-2"
-            >
-              Vaciar carrito
-            </button>
-          </div>
-        </div>
+        )}
       </li>
     </ul>
   );

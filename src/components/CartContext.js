@@ -26,8 +26,22 @@ const CartContextProvider = ({ children }) => {
     setCartList([]);
   };
 
+  const countItems = () => {
+    let qtyItems = 0;
+    CartList.map((item) => (qtyItems += item.qty));
+    return qtyItems;
+  };
+
+  const totalCart = () => {
+    let total = 0;
+    CartList.map((item) => (total += item.qty * item.price));
+    return total;
+  };
+
   return (
-    <CartContext.Provider value={{ CartList, addItem, removeItem, clear }}>
+    <CartContext.Provider
+      value={{ CartList, addItem, removeItem, clear, countItems, totalCart }}
+    >
       {children}
     </CartContext.Provider>
   );

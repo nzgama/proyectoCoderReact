@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "./CartContext";
 
 const CartWidget = () => {
-  const [CartCount, setCartCount] = useState(4); //hook
+  const test = useContext(CartContext);
 
   return (
     <>
@@ -10,7 +11,11 @@ const CartWidget = () => {
         <Link to="/cart">
           <button type="button" className="btn btn-outline-dark">
             <i className="bi bi-cart3"></i>
-            <span className="badge text-bg-secondary">{CartCount}</span>
+            {test.countItems() > 0 && (
+              <span className="badge text-bg-secondary">
+                {test.countItems()}
+              </span>
+            )}
           </button>
         </Link>
       </div>
