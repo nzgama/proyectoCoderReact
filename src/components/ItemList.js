@@ -1,9 +1,10 @@
 import Item from "./Item";
 import { useEffect, useState } from "react";
-import GetProducts from "../utils/GetProducts";
-import { data } from "../utils/data";
+// import GetProducts from "../utils/GetProducts";
+// import { data } from "../utils/data";
 import { useParams } from "react-router-dom";
 import Spinner from "./Spinner";
+import { firesoteFetchGetProducts } from "../utils/firebaseConfig";
 
 const ItemList = () => {
   const [products, setProducts] = useState([]);
@@ -11,11 +12,18 @@ const ItemList = () => {
 
   useEffect(() => {
     if (id) {
-      GetProducts(data.filter((item) => item.categori_id === parseInt(id)))
+      // GetProducts(data.filter((item) => item.categori_id === parseInt(id)))
+      //   .then((result) => setProducts(result))
+      //   .catch((error) => console.log(error));
+
+      firesoteFetchGetProducts(id)
         .then((result) => setProducts(result))
         .catch((error) => console.log(error));
     } else {
-      GetProducts(data)
+      // GetProducts(data)
+      //   .then((result) => setProducts(result))
+      //   .catch((error) => console.log(error));
+      firesoteFetchGetProducts()
         .then((result) => setProducts(result))
         .catch((error) => console.log(error));
     }
