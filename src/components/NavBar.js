@@ -7,7 +7,7 @@ const NavBar = () => {
   const text = useContext(CartContext);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-primary">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -75,7 +75,7 @@ const NavBar = () => {
               placeholder="Buscar"
               aria-label="Search"
             ></input>
-            <button className="btn btn-outline-success" type="submit">
+            <button className="btn btn-outline-dark" type="submit">
               Buscar
             </button>
           </form>
