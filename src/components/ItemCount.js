@@ -8,7 +8,7 @@ const ItemCount = (props) => {
   };
 
   const itemMinus = () => {
-    ProductCount > 0 && setProductCount(ProductCount - 1);
+    ProductCount > 1 && setProductCount(ProductCount - 1);
   };
 
   return (

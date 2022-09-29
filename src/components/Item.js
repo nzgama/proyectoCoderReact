@@ -18,13 +18,20 @@ const Item = (props) => {
         <h4 className="text-center">{props.title}</h4>
         <Link to={`/item/${props.id}`}>
           <img
+            width="300"
+            height="300"
             src={props.picureURL}
             className="rounded mx-auto d-block border border-dark"
             alt="..."
           ></img>
         </Link>
         <div className="card-body">
-          <p className="card-text">Precio ${props.price}</p>
+          {props.stock > 0 ? (
+            <p className="card-text">Precio ${props.price}</p>
+          ) : (
+            <p className="card-text">Producto agotado</p>
+          )}
+
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
               {AddToCart ? (
@@ -35,11 +42,15 @@ const Item = (props) => {
                     </button>
                   </Link>
                 </div>
-              ) : (
+              ) : props.stock > 0 ? (
                 <ItemCount stock={props.stock} onAdd={onAdd} />
+              ) : (
+                <p>Sin Stock</p>
               )}
             </div>
-            <small className="text-muted">Stock {props.stock}</small>
+            {props.stock > 0 && (
+              <small className="text-muted">Stock {props.stock}</small>
+            )}
           </div>
         </div>
       </div>

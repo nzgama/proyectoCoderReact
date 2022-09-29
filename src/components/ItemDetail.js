@@ -5,6 +5,7 @@ import { CartContext } from "./CartContext";
 
 const ItemDetail = (props) => {
   const [AddToCart, setAddToCart] = useState(false);
+
   const test = useContext(CartContext);
 
   const onAdd = (qty) => {
@@ -17,15 +18,21 @@ const ItemDetail = (props) => {
       <div className="px-4 py-5 my-5 text-center">
         <h1 className="display-5 fw-bold">{props.product.title}</h1>
         <img
+          width="500"
+          height="500"
           src={props.product.picureURL}
           className="rounded mx-auto d-block border border-dark"
           alt="..."
         ></img>
         <div className="col-lg-6 mx-auto">
           <p className="lead mb-4">{props.product.descripcion}</p>
-          <p className="card-text">Precio $ {props.product.price}</p>
+          <p className="card-text">
+            {props.product.stock > 0 && `Precio $ ${props.product.price}`}
+          </p>
           <small className="text-muted">
-            Stock disponible {props.product.stock}
+            {props.product.stock > 0
+              ? `Stock disponible ${props.product.stock}`
+              : `No hay stock disponible`}
           </small>
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
             {AddToCart ? (
@@ -42,7 +49,9 @@ const ItemDetail = (props) => {
                 </Link>
               </div>
             ) : (
-              <ItemCount stock={props.product.stock} onAdd={onAdd} />
+              props.product.stock > 0 && (
+                <ItemCount stock={props.product.stock} onAdd={onAdd} />
+              )
             )}
           </div>
         </div>

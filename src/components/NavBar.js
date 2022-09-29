@@ -27,9 +27,13 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#top">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/quienes-somos"
+              >
                 ¿Quienes Somos?
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -60,9 +64,9 @@ const NavBar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a href="#top" className="nav-link">
+              <Link className="nav-link" to="/contactanos">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
           <form className="d-flex" role="search">

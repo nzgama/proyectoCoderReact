@@ -1,7 +1,5 @@
 import ItemDetail from "./ItemDetail";
-import { data } from "../utils/data";
 import { useEffect, useState } from "react";
-import GetProduct from "../utils/GetProduct";
 import { useParams } from "react-router-dom";
 import Spinner from "./Spinner";
 import { firesoteFetchGetProduct } from "../utils/firebaseConfig";
@@ -11,9 +9,6 @@ const ItemDetailConteiner = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    // GetProduct(data.find((item) => item.id === parseInt(id)))
-    //   .then((result) => setProduct(result))
-    //   .catch((error) => console.log(error));
     firesoteFetchGetProduct(id)
       .then((result) => setProduct(result))
       .catch((error) => console.log(error));
