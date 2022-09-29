@@ -15,7 +15,7 @@ __El proyecto cuenta con un NavBar el cual nos permite navegar por la aplicaci
 * **"Icono del carrito"** nos lleva al carrito, en este podemos ver que artículos agregamos al carrito y podemos simular una compra.
 
 ### Tener en cuenta
-*Cada artículo puede ser agregado al carrito desde el inicio o desde su vista detallada (haciendo click sobre su imagen)
-*No se pueden agregar al carrito artículos sin stock o elegir una cantidad menor a 1
+* Cada artículo puede ser agregado al carrito desde el inicio o desde su vista detallada (haciendo click sobre su imagen).
+* No se pueden agregar al carrito artículos sin stock o elegir una cantidad menor a 1.
 
 ### by: Gamal Mengarelli
