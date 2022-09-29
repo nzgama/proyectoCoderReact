@@ -7,13 +7,11 @@
 * Instalar dependecias
 * Ejecutar poryecto
 
-_You **can** combine them_
-
-_El proyecto cuenta con un NavBar el cual nos permite navegar por la aplicación:
+__El proyecto cuenta con un NavBar el cual nos permite navegar por la aplicación:
 **"MiTienda"** siempre nos lleva al inicio.
 **"¿Quienes Somos?"** nos lleva a una página donde se explica el objetivo de la tienda.
 **"Ropa"** nos permite filtrar por las tres categorías de ropa que cuenta la tienda.
 **"Contacto"** nos lleva a una página ficticia para contactar a la tienda.
-**"Icono del carrito"** nos lleva al carrito, en este podemos ver que artículos agregamos al carrito y podemos simular una compra._
+**"Icono del carrito"** nos lleva al carrito, en este podemos ver que artículos agregamos al carrito y podemos simular una compra.__
 
 ### by: Gamal Mengarelli
